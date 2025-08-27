@@ -2,6 +2,9 @@
 
 import Profile from "@/components/Profile";
 
+// importar un componente
+import Saludar from "@/components/Saludar";
+
 
 export default function Home() {
 
@@ -48,8 +51,11 @@ export default function Home() {
           // user.active ? <Profile key={user.id} name={user.name} lastName={user.lastName} id={user.id} img={user.img} comments={user.comentarios} /> : <h2>no esta activo</h2>
           user.active && <Profile key={user.id} name={user.name} lastName={user.lastName} id={user.id} img={user.img} comments={user.comentarios} />
 
-        ))
+        ),)
       }
+
+      { /* Llamar al componente saludar  */ }
+      <Saludar />
     </div>
   );
 }
