@@ -50,7 +50,7 @@ export default function Home() {
 
         ))
       }{/*llamar componente saludar*/}
-      <Saludar nombre="Daniel" />
+      <Saludar name="Daniel" edad={12} />
     </div>
   );
 }
