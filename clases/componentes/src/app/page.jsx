@@ -2,6 +2,7 @@
 
 import Profile from "@/components/Profile";
 import Saludar from "./Saludar";
+import Lista from "./lista";
 
 export default function Home() {
 
@@ -51,6 +52,8 @@ export default function Home() {
         ))
       }{/*llamar componente saludar*/}
       <Saludar name="Daniel" edad={12} />
+      {/*llamar componente lista*/}
+      <Lista numeros={[1, 2, 3, 4, 5]} />
     </div>
   );
 }
