@@ -1,12 +1,17 @@
 'use client'
 
 import Profile from "@/components/Profile";
+<<<<<<< HEAD
 
 // importar un componente
 import Saludar from "@/components/Saludar";
 
 import Lista from "@/components/Lista";
 
+=======
+import Saludar from "./Saludar";
+import Lista from "./lista";
+>>>>>>> a9109186b87e1909f6aca36451918487c7288d2f
 
 export default function Home() {
 
@@ -53,6 +58,7 @@ export default function Home() {
           // user.active ? <Profile key={user.id} name={user.name} lastName={user.lastName} id={user.id} img={user.img} comments={user.comentarios} /> : <h2>no esta activo</h2>
           user.active && <Profile key={user.id} name={user.name} lastName={user.lastName} id={user.id} img={user.img} comments={user.comentarios} />
 
+<<<<<<< HEAD
         ),)
       }
 
@@ -60,6 +66,13 @@ export default function Home() {
       <Saludar name="Camilo" edad={26} />
 
       <Lista numeros={[1,2,3,4,5]} />
+=======
+        ))
+      }{/*llamar componente saludar*/}
+      <Saludar name="Daniel" edad={12} />
+      {/*llamar componente lista*/}
+      <Lista numeros={[1, 2, 3, 4, 5]} />
+>>>>>>> a9109186b87e1909f6aca36451918487c7288d2f
     </div>
   );
 }
